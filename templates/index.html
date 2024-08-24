@@ -17,6 +17,11 @@
       crossorigin="anonymous"
     />
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- BOOTSTRAP ICON -->
     <link
       rel="stylesheet"
@@ -75,104 +80,106 @@
     <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="hidden">About Asteria</h2>
-        <p class="hidden">
- edit_footer_form
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-          recusandae ipsa, sint commodi laborum vero deleniti qui, earum quam
-          neque cumque et sit debitis repellendus magnam aliquam dicta in!
-          Corrupti reprehenderit officia molestias velit vero odit, magni libero
-          ipsum? Nihil totam quasi tempore, eligendi culpa enim nemo
-          perspiciatis iusto iste minus incidunt consectetur quod adipisci?
-          Veniam praesentium illum recusandae quasi illo culpa provident dolore
-          sapiente amet! Rem corporis qui ipsum! no gap
-=======
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae ipsa, sint commodi laborum vero deleniti qui, earum quam neque cumque et sit debitis repellendus magnam aliquam dicta in! Corrupti reprehenderit officia molestias velit vero odit, magni libero ipsum? Nihil totam quasi tempore, eligendi culpa enim nemo perspiciatis iusto iste minus incidunt consectetur quod adipisci? Veniam praesentium illum recusandae quasi illo culpa provident dolore sapiente amet! Rem corporis qui ipsum! no gap
- main
-        </p>
+        <h2 class="heading hidden text-shadow">About Asteria</h2>
+        <p class="hidden text-shadow"> 
+          ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang Bersinar". Acara ini melibatkan anggota organisasi organisasi intra sekolah dalam kegiatan menginap bersama, api unggun, permainan dan kegiatan kegiatan yang lainnya dibawah langit yang penuh bintang bintang bersinar.</p>
       </div>
     </section>
 
     <!-- Waves 1 -->
-    <svg
-      class="waves-1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#1a3365"
-        fill-opacity="1"
-        d="M0,160L10.4,176C20.9,192,42,224,63,229.3C83.5,235,104,213,125,186.7C146.1,160,167,128,188,101.3C208.7,75,230,53,250,37.3C271.3,21,292,11,313,42.7C333.9,75,355,149,376,165.3C396.5,181,417,139,438,133.3C459.1,128,480,160,501,192C521.7,224,543,256,563,234.7C584.3,213,605,139,626,106.7C647,75,668,85,689,96C709.6,107,730,117,751,133.3C772.2,149,793,171,814,176C834.8,181,856,171,877,181.3C897.4,192,918,224,939,208C960,192,981,128,1002,112C1022.6,96,1043,128,1064,138.7C1085.2,149,1106,139,1127,138.7C1147.8,139,1169,149,1190,154.7C1210.4,160,1231,160,1252,138.7C1273,117,1294,75,1315,96C1335.7,117,1357,203,1377,208C1398.3,213,1419,139,1430,101.3L1440,64L1440,320L1429.6,320C1419.1,320,1398,320,1377,320C1356.5,320,1336,320,1315,320C1293.9,320,1273,320,1252,320C1231.3,320,1210,320,1190,320C1168.7,320,1148,320,1127,320C1106.1,320,1085,320,1064,320C1043.5,320,1023,320,1002,320C980.9,320,960,320,939,320C918.3,320,897,320,877,320C855.7,320,835,320,814,320C793,320,772,320,751,320C730.4,320,710,320,689,320C667.8,320,647,320,626,320C605.2,320,584,320,563,320C542.6,320,522,320,501,320C480,320,459,320,438,320C417.4,320,397,320,376,320C354.8,320,334,320,313,320C292.2,320,271,320,250,320C229.6,320,209,320,188,320C167,320,146,320,125,320C104.3,320,83,320,63,320C41.7,320,21,320,10,320L0,320Z"
-      ></path>
+    <svg class="waves-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <defs>
+        <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+          <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="white" flood-opacity="1" result="color" />
+          <feComposite in2="offsetBlur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <path filter ="url(#waveShadow)" fill="rgb(135, 153, 71)" fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,181.3C192,149,240,107,288,117.3C336,128,384,192,432,202.7C480,213,528,171,576,149.3C624,128,672,128,720,117.3C768,107,816,85,864,85.3C912,85,960,107,1008,106.7C1056,107,1104,85,1152,90.7C1200,96,1248,128,1296,160C1344,192,1392,224,1416,240L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
     </svg>
 
     <!-- Gallery Section -->
     <section id="gallery" class="section">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2 class="hidden text-shadow">Gallery</h2>
         <div class="gallery-grid">
           <!-- Landscape Videos -->
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
 
           <!-- Portrait Videos -->
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline class="hidden">
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p>Description of the video</p>
+            <p class="hidden">Description of the video</p>
           </div>
         </div>
       </div>
 
       <!-- Waves 2 -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#FFF"
-          fill-opacity="1"
-          d="M0,160L10.4,176C20.9,192,42,224,63,229.3C83.5,235,104,213,125,186.7C146.1,160,167,128,188,101.3C208.7,75,230,53,250,37.3C271.3,21,292,11,313,42.7C333.9,75,355,149,376,165.3C396.5,181,417,139,438,133.3C459.1,128,480,160,501,192C521.7,224,543,256,563,234.7C584.3,213,605,139,626,106.7C647,75,668,85,689,96C709.6,107,730,117,751,133.3C772.2,149,793,171,814,176C834.8,181,856,171,877,181.3C897.4,192,918,224,939,208C960,192,981,128,1002,112C1022.6,96,1043,128,1064,138.7C1085.2,149,1106,139,1127,138.7C1147.8,139,1169,149,1190,154.7C1210.4,160,1231,160,1252,138.7C1273,117,1294,75,1315,96C1335.7,117,1357,203,1377,208C1398.3,213,1419,139,1430,101.3L1440,64L1440,320L1429.6,320C1419.1,320,1398,320,1377,320C1356.5,320,1336,320,1315,320C1293.9,320,1273,320,1252,320C1231.3,320,1210,320,1190,320C1168.7,320,1148,320,1127,320C1106.1,320,1085,320,1064,320C1043.5,320,1023,320,1002,320C980.9,320,960,320,939,320C918.3,320,897,320,877,320C855.7,320,835,320,814,320C793,320,772,320,751,320C730.4,320,710,320,689,320C667.8,320,647,320,626,320C605.2,320,584,320,563,320C542.6,320,522,320,501,320C480,320,459,320,438,320C417.4,320,397,320,376,320C354.8,320,334,320,313,320C292.2,320,271,320,250,320C229.6,320,209,320,188,320C167,320,146,320,125,320C104.3,320,83,320,63,320C41.7,320,21,320,10,320L0,320Z"
-        ></path>
+        <!--  shadow -->
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
+            <feMerge>
+              <feMergeNode in="shadow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <path filter="url(#waveShadow)" fill="rgb(63, 58, 88)" fill-opacity="1" d="M0,128L24,117.3C48,107,96,85,144,106.7C192,128,240,192,288,208C336,224,384,192,432,165.3C480,139,528,117,576,117.3C624,117,672,139,720,138.7C768,139,816,117,864,128C912,139,960,181,1008,208C1056,235,1104,245,1152,213.3C1200,181,1248,107,1296,74.7C1344,43,1392,53,1416,58.7L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
       </svg>
+      
     </section>
 
     <!-- Activities Section -->
     <section id="activities" class="section">
       <div class="container">
-        <h2 class="hidden">Asteria's Activities</h2>
+        <h2 class="heading hidden text-shadow">Asteria's Activities</h2>
         <section class="divider"></section>
         <div class="activities-card">
           <div class="list hidden">
@@ -214,8 +221,21 @@
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
     >
+      <defs>
+        <filter id="waveShadow" x="-50%" y="-50%" width="200%"  height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+          <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="white" flood-opacity="1" result="color" />
+          <feComposite in2="offsetBlur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
       <path
-        fill="#2e55a4"
+        filter="url(#waveShadow)"
+        fill="rgb(135, 153, 71)"
         fill-opacity="1"
         d="M0,96L80,122.7C160,149,320,203,480,218.7C640,235,800,213,960,186.7C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
       ></path>

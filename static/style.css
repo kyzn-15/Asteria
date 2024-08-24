@@ -1,6 +1,9 @@
 :root {
   --background-color: rgb(63, 58, 88);
+  --header: rgb(38, 32, 66);
   --trans-white: rgba(255, 255, 255, 0.648);
+  --green: rgb(135, 153, 71);
+  --light-green: rgb(202, 229, 106);
 }
 
 * {
@@ -20,11 +23,16 @@
   transition: all 0.7s ease-in-out;
 }
 
+.text-shadow{
+  text-shadow: white 0px 0px 20px;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: var(--background-color);
 }
 
 .bg-darkblue {
@@ -102,6 +110,18 @@ section.banner .gradient-banner {
   align-items: center;
 }
 
+#about .container {
+  color: white;
+}
+.heading {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#about .container p {
+  font-size: 1.5rem;
+}
+
 /* Activities Section */
 #activities .container {
   max-width: 1200px;
@@ -114,11 +134,11 @@ section.banner .gradient-banner {
 section.divider {
   width: 100vw;
   height: 2rem;
-  background: linear-gradient(white, rgb(224, 204, 175));
+  background: linear-gradient(var(--background-color), rgb(224, 204, 175));
 }
 
 .divider.bottom {
-  background: linear-gradient(rgb(224, 204, 175), white);
+  background: linear-gradient(rgb(224, 204, 175), var(--background-color));
   margin-bottom: 2rem;
 }
 
@@ -142,7 +162,7 @@ section.divider {
 
 div.list {
   --size: 10rem;
-  background-color: salmon;
+  background-color: var(--green);
   width: var(--size);
   height: var(--size);
   display: flex;
@@ -154,19 +174,19 @@ div.list {
 }
 
 .list:hover {
-  background-color: saddlebrown;
+  background-color: var(--light-green);
   animation: list-hover 0.5s linear;
   scale: 1.05;
 }
 
 @keyframes list-hover {
   0% {
-    background-color: salmon;
+    background-color: var(--green);
     scale: 1;
   }
 
   100% {
-    background-color: saddlebrown;
+    background-color: var(--light-green);
     scale: 1.05;
   }
 }
@@ -189,6 +209,7 @@ div.list {
 /* Section General */
 .section {
   padding: 50px 0;
+  background-color: var(--background-color);
   text-align: center;
 }
 .section h2 {
@@ -196,11 +217,12 @@ div.list {
 }
 .waves-1 {
   margin-bottom: -25px;
+  background-color: var(--background-color);
 }
 
 /* Gallery */
 #gallery {
-  background-color: #1a3365;
+  background-color: var(--green);
   color: white;
 }
 .gallery-grid {
@@ -225,13 +247,13 @@ div.list {
 
 /* Form */
 .waves-3 {
-  margin-top: -125px;
   margin-bottom: -25px;
+  background-color: var(--background-color);
 }
 #form {
   width: 100vw;
   color: white;
-  background-color: #2e55a4;
+  background-color: var(--green);
   margin-top: 0;
   margin-bottom: 150px;
 }
