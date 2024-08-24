@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Event Kelompok 6</title>
+    <title>Asteria | Magang Kelompok 6</title>
 
     <link rel="stylesheet" href="../static/style.css" />
 
@@ -35,41 +35,26 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue">
-      <div class="container">
-        <a class="navbar-brand" href="#">Kelompok 6</a>
+    <nav class="navbarv shadow">
+      <div class="logo-wrap">
+        <img src="../static/assets/Asteria_logo.jpg" alt="">
+        <a href="#" class="navbarv-logo">Kelompok 6</a>
+      </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="navbarv-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#activities">Activities</a>
+        <a href="#performance">Performance</a>
+        <a href="#form">Form</a>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#activities">Activities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#form">Form</a>
-            </li>
-          </ul>
-        </div>
+      <div class="navbarv-extra">
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
       </div>
     </nav>
+
 
     <!-- Banner -->
     <section class="banner">
@@ -84,6 +69,7 @@
         <p class="hidden text-shadow"> 
           ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang Bersinar". Acara ini melibatkan anggota organisasi organisasi intra sekolah dalam kegiatan menginap bersama, api unggun, permainan dan kegiatan kegiatan yang lainnya dibawah langit yang penuh bintang bintang bersinar.</p>
       </div>
+      
     </section>
 
     <!-- Waves 1 -->
@@ -110,28 +96,25 @@
         <div class="gallery-grid">
           <!-- Landscape Videos -->
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline class="hidden">
+             
+            <p class="hidden">Description of the video</p>
+          </div>
+          <div class="gallery-item landscape">
+            <video autoplay muted loop playsinline>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline class="hidden">
+            <video autoplay muted loop playsinline>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline class="hidden">
-              <source src="../static/assets/landscape.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p class="hidden">Description of the video</p>
-          </div>
-          <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline class="hidden">
+            <video autoplay muted loop playsinline>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -140,14 +123,14 @@
 
           <!-- Portrait Videos -->
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline class="hidden">
+            <video autoplay muted loop playsinline>
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline class="hidden">
+            <video autoplay muted loop playsinline>
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -243,6 +226,7 @@
 
     <!-- Form Section -->
     <section id="form" class="section">
+      
       <div class="form-container">
         <h2>
           Bergabunglah dalam Petualangan Malam yang Tak Terlupakan di Asteria!
@@ -259,6 +243,20 @@
 
         <h3>Jadi bagian dari Asteria sekarang!</h3>
         <button id="submit-btn" type="submit">Join Us</button>
+      </div>
+
+      <!-- Starfall Animation -->
+      <div class="starfall">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
       </div>
     </section>
 
@@ -285,7 +283,7 @@
         <div class="tiktok"><i class="bi bi-tiktok"></i> Tiktok</div>
         <div class="line"><i class="bi bi-line"></i> Line</div>
         <div class="youtube"><i class="bi bi-youtube"></i> Youtube</div>
-        <div class="email"><i class="bi bi-envelope-fill"></i> Email</div>
+        <div class="email"><i class="bi bi-envelope-fill"></i></div>
       </div>
     </section>
 
