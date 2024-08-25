@@ -322,7 +322,6 @@ video source{
   color: white;
   background-color: var(--green);
   margin-top: 0;
-  margin-bottom: 150px;
 }
 #form .form-container {
   width: 80%;
@@ -338,7 +337,7 @@ video source{
 }
 
 #submit-btn {
-  background-color: #1a3365;
+  background-color: var(--header);
   color: white;
   border-radius: 10px;
   border: none;
@@ -347,7 +346,8 @@ video source{
   transition: 0.2s;
 }
 #submit-btn:hover {
-  background-color: #284a8d;
+  background-color: var(--nav-bg);
+  color: var(--yellow);
 }
 
 /* Star fall */
@@ -472,10 +472,13 @@ video source{
 
 
 /* Event Information */
+
 #information {
   display: flex;
   align-items: center;
   min-height: 450px;
+  background-color: var(--nav-bg);
+  color: white;
 }
 #information .event-credit,
 #information .location,
@@ -486,23 +489,22 @@ video source{
 #information .location {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
   text-align: center;
   transition: 0.2s;
 }
 
 #information i {
-  text-shadow: 0 0 1rem black;
+  text-shadow: 0 0 1rem white;
 }
 
 #information .location i {
   font-size: 35px;
-  transition: 0.2s;
 }
 
 #information .location:hover {
-  color: #1a3365;
-  text-shadow: 0 0 1rem #1a3365;
+  color: var(--header);
+  text-shadow: 0 0 1rem var(--header);
 }
 
 #information .contact-person {
@@ -518,13 +520,13 @@ video source{
   transition: 0.2s;
 }
 #information .contact-person div:hover {
-  color: #1a3365;
-  text-shadow: 0 0 1rem #1a3365;
+  color: var(--header);
+  text-shadow: 0 0 1rem var(--header);
 }
 
 /* Footer */
 footer {
-  background-color: #1a3365;
+  background-color: var(--header);
   color: #fff;
   padding: 20px 0;
   text-align: center;
