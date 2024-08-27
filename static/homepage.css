@@ -1,11 +1,12 @@
 :root {
-  --background-color: rgb(63, 58, 88);
-  --nav-bg: rgb(90, 83, 126);
+  --background-color: rgb(57, 85, 125);
+  --nav-bg: rgb(63, 102, 155);
   --header: rgb(38, 32, 66);
   --trans-white: rgba(255, 255, 255, 0.648);
-  --green: rgb(135, 153, 71);
-  --light-green: rgb(202, 229, 106);
+  --green: rgb(131, 171, 82);
+  --light-green: rgb(180, 227, 86);
   --yellow: rgb(255, 230, 132);
+  --dark-yellow: rgb(223, 199, 91);
 }
 
 * {
@@ -70,6 +71,7 @@ body {
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
+  filter: drop-shadow(0px 0px 20px white);
 }
 
 .navbarv .navbarv-nav a {
@@ -124,37 +126,28 @@ body {
   font-size: 4rem;
 }
 
-section.banner {
+section.preview{
   --size: 100vw;
-  position: relative;
   width: var(--size);
-  height: calc(var(--size) / 1.6);
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 80px;
   background-color: var(--background-color);
 }
 
-section.banner img {
-  width: 100vw;
-  height: calc(100vw / 1.6);
-  background-color: gray;
-}
+section.preview .banner-about{
+  --size: 80vw;
+  width: var(--size);
+  height: calc(var(--size) /1.6);
+  margin-top: 2rem;
+  background-image: url(../static/assets/Asteria_Banner.png);
+  background-size: cover;
+  background-position: center;
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 20px white;
+} 
 
-section.banner .gradient-banner {
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  bottom: 0;
-  height: 10rem;
-  width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    var(--background-color)
-  );
-}
 
 /* About Section */
 #about {
@@ -180,8 +173,54 @@ section.banner .gradient-banner {
   font-size: 1.5rem;
 }
 
-#about .waves-1 {
-  margin-bottom: -120px;
+img.about-logo{
+  filter: drop-shadow(0px 0px 15px white);
+}
+
+#about .waves-3 {
+  margin-bottom: -100px;
+  background-color: var(--dark-yellow);
+}
+
+/* Reverse */
+.reverse-wrap{
+  width: 100vw;
+  background-color: var(--green);
+}
+
+#about .container.reverse {
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+}
+
+/* About Preview */
+.waves-2{
+  background-color: var(--green);
+}
+
+.about-wrap{
+  background-color: var(--dark-yellow);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-banner{
+  --size: 50vw;
+  width: var(--size);
+  height: calc(var(--size) /1.6);
+  margin-top: 2rem;
+  background-image: url(../static/assets/Asteria_Banner.png);
+  background-size: cover;
+  background-position: center;
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 20px white;
 }
 
 /* Section General */
@@ -266,7 +305,7 @@ footer {
     padding: 0 10%;
   }
 
-  #about .waves-1 {
+  #about .waves-3 {
     margin-bottom: -60px;
   }
 
@@ -308,18 +347,28 @@ footer {
     overflow-x: hidden;
   }
 
-  #about .container {
-    flex-direction: column;
+  #about .container{
+    flex-direction: column-reverse;
   }
+
+  #about .container.reverse{
+    flex-direction: column-reverse;
+  } 
 
   #about .container .description p {
     font-size: 12px;
   }
 
-  #about .container img {
+  #about .container img{
     width: 200px;
     height: 200px;
   }
+
+  #about .container.reverse img{
+    --size: 200px;
+    width: 350px;
+    height: var(--size);
+  } 
 
   #hamburger-menu {
     display: inline-block;
@@ -380,5 +429,12 @@ footer {
 
   .navbarv .navbarv-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+}
+
+@media (max-width: 590px){
+  #information .contact-person div{
+    font-size: 1rem;
+    flex-direction: column;
   }
 }

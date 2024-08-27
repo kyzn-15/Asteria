@@ -34,6 +34,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../static/assets/favicon_logo.png" type="image/x-icon">
 
     <script src="../static/script.js"></script>
   </head>
@@ -46,8 +48,8 @@
 
       <div class="navbarv-nav">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
         <a href="index.html">Event</a>
+        <a href="#about">About</a>
       </div>
 
       <div class="navbarv-extra">
@@ -56,9 +58,10 @@
     </nav>
 
     <!-- Banner -->
-    <section class="banner" id="home">
-      <img src="../static/assets/Asteria_Banner.png" alt="" />
-      <section class="gradient-banner"></section>
+    <section class="preview">
+      <a href="../templates/index.html">
+        <div class="banner-about"></div>
+      </a>
     </section>
 
     <!-- About Section -->
@@ -74,31 +77,86 @@
             di masa ini.
           </p>
         </div>
-        <img src="../static/assets/kelompok-6-logo.png" alt="">
+        <img src="../static/assets/kelompok-6-logo.png" alt="" class="about-logo">
       </div>
+
       <!-- Waves 1 -->
-      <svg
-        class="waves-1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <defs>
           <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
-            <feOffset in="blur" dx="0" dy="4" result="offsetBlur" />
-            <feComponentTransfer>
-              <feFuncA type="linear" slope="0.3" />
-            </feComponentTransfer>
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
             <feMerge>
-              <feMergeNode in="offsetBlur" />
+              <feMergeNode in="shadow" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
         </defs>
+        <path filter="url(#waveShadow)" fill="rgb(131, 171, 82)" fill-opacity="1" d="M0,160L30,138.7C60,117,120,75,180,101.3C240,128,300,224,360,218.7C420,213,480,107,540,101.3C600,96,660,192,720,213.3C780,235,840,181,900,154.7C960,128,1020,128,1080,149.3C1140,171,1200,213,1260,224C1320,235,1380,213,1410,202.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+      </svg>
+
+      <div class="reverse-wrap">
+        <div class="container reverse">
+          <div class="description">
+            <h2 class="heading hidden text-shadow">STARGAZERS Mascot</h2>
+            <p class="hidden text-shadow">
+              Astrotter adalah maskot Stargazers yang berupa berang-berang, hewan yang dikenal sangat dekat dengan alam, terutama di perairan seperti sungai dan danau. Kehadiran berang-berang ini sering kali menjadi bagian dari pengalaman berkemah, yang mencerminkan kedekatan dengan alam yang diinginkan dalam kegiatan camping night tersebut.
+            </p>
+          </div>
+          <img src="../static/assets/Astrotter.png
+          " alt="" class="about-logo">
+        </div>
+      </div>
+
+      <!-- Waves-2 -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves-2">
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
+            <feMerge>
+              <feMergeNode in="shadow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        
+        <path filter="url(#waveShadow)" fill="rgb(223, 199, 91)" fill-opacity="1" d="M0,128L34.3,149.3C68.6,171,137,213,206,208C274.3,203,343,149,411,144C480,139,549,181,617,208C685.7,235,754,245,823,234.7C891.4,224,960,192,1029,160C1097.1,128,1166,96,1234,90.7C1302.9,85,1371,107,1406,117.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+      
+      </svg>
+
+      <div class="about-wrap">
+        <h2 class="heading text-shadow">More About Stargazers</h2>
+        <div class="about-banner"></div>
+      </div>
+
+      <!-- Waves 3 -->
+      <svg
+        class="waves-3"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+      <defs>
+        <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+          <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="white" flood-opacity="1" result="color" />
+          <feComposite in2="offsetBlur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
 
         <path
           filter="url(#waveShadow)"
-          fill="rgb(90, 83, 126)"
+          fill="rgb(63, 102, 155)"
           fill-opacity="1"
           d="M0,64L60,101.3C120,139,240,213,360,240C480,267,600,245,720,240C840,235,960,245,1080,208C1200,171,1320,85,1380,42.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         ></path>
