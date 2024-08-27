@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asteria | Magang Kelompok 6</title>
+
+    <link rel="stylesheet" href="../static/homepage.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- BOX ICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="../static/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbarv shadow">
+      <div class="logo-wrap">
+        <img src="../static/assets/kelompok-6-logo.png" alt="" />
+        <a href="#" class="navbarv-logo">STARGAZERS</a>
+      </div>
+
+      <div class="navbarv-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="index.html">Event</a>
+      </div>
+
+      <div class="navbarv-extra">
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+      <img src="../static/assets/Asteria_Banner.png" alt="" />
+      <section class="gradient-banner"></section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="description">
+          <h2 class="heading hidden text-shadow">About STARGAZERS</h2>
+          <p class="hidden text-shadow">
+            (Pengamat Bintang) merupakan nama Kelompok 6 magang osis 2024.
+            STARGAZERS menggambarkan kelompok 6 sebagai team yang akan melewati
+            kesusahan tantangan dan memiliki semangat juang untuk bekerja dengan
+            tekun yang tinggi sambil mengamat bintang bintang untuk mencari arahan
+            di masa ini.
+          </p>
+        </div>
+        <img src="../static/assets/kelompok-6-logo.png" alt="">
+      </div>
+      <!-- Waves 1 -->
+      <svg
+        class="waves-1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="4" result="offsetBlur" />
+            <feComponentTransfer>
+              <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode in="offsetBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <path
+          filter="url(#waveShadow)"
+          fill="rgb(90, 83, 126)"
+          fill-opacity="1"
+          d="M0,64L60,101.3C120,139,240,213,360,240C480,267,600,245,720,240C840,235,960,245,1080,208C1200,171,1320,85,1380,42.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Event Information -->
+    <section id="information">
+      <div class="event-credit">
+        <h1>Asteria</h1>
+        <p>Kelompok 6 Magang OSIS SMA Ignatius Global School 2024/25</p>
+      </div>
+      <a
+        href="https://www.google.com/maps/place/Ignatius+Global+School/@-2.9710393,104.7589212,17z/data=!3m1!4b1!4m5!3m4!1s0x2e3b77abf5ea07a9:0x753dfe8d5c2ff65d!8m2!3d-2.9710361!4d104.761108?hl=id&shorturl=1"
+        class="location"
+        target="_blank"
+      >
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>
+          Jl. Mayor Ruslan No.118, 9 Ilir, Kec. Ilir Tim. I, Kota Palembang,
+          Sumatera Selatan 30114
+        </p>
+      </a>
+      <div class="contact-person">
+        <div class="instagram"><i class="bi bi-instagram"></i> Instagram</div>
+        <div class="twitter"><i class="bi bi-twitter"></i> Twitter</div>
+        <div class="tiktok"><i class="bi bi-tiktok"></i> Tiktok</div>
+        <div class="line"><i class="bi bi-line"></i> Line</div>
+        <div class="youtube"><i class="bi bi-youtube"></i> Youtube</div>
+        <div class="email"><i class="bi bi-envelope-fill"></i> Email</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Copyright © 2024 Sekbid Multimedia (Kelompok 6 / STARGAZERS) Website
+          Asteration
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
