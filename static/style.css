@@ -1,11 +1,12 @@
 :root {
-  --background-color: rgb(63, 58, 88);
-  --nav-bg: rgb(90, 83, 126);
+  --background-color: rgb(57, 85, 125);
+  --nav-bg: rgb(63, 102, 155);
   --header: rgb(38, 32, 66);
   --trans-white: rgba(255, 255, 255, 0.648);
-  --green: rgb(135, 153, 71);
-  --light-green: rgb(202, 229, 106);
+  --green: rgb(131, 171, 82);
+  --light-green: rgb(180, 227, 86);
   --yellow: rgb(255, 230, 132);
+  --dark-yellow: rgb(223, 199, 91);
 }
 
 * {
@@ -49,7 +50,6 @@ body {
   padding: 1.4rem 7%;
   background-color: var(--nav-bg);
   max-height: 5rem;
-  /* border-bottom: 1px solid #513c28; */
   position: fixed;
   top: 0;
   left: 0;
@@ -195,7 +195,7 @@ section.banner .gradient-banner {
 }
 
 section.divider {
-  width: 100vw;
+  width: 70vw;
   height: 2rem;
   background: linear-gradient(var(--background-color), rgb(224, 204, 175));
 }
@@ -205,22 +205,8 @@ section.divider {
   margin-bottom: 2rem;
 }
 
-.waves-2{
+.waves-2 {
   background-color: var(--green);
-}
-
-.activities-card {
-  background-color: skyblue;
-  background-image: url(../static/assets/test-background.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
 }
 
 .genap {
@@ -266,6 +252,72 @@ div.list {
   align-items: center;
   border-radius: 0.5rem;
   padding: 1rem 1rem;
+}
+
+#activities .performance {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#activities .performance .kelas11,
+#activities .performance .kelas12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#activities .performance .judul {
+  margin: 60px 0;
+  /* margin-bottom: 70px; */
+}
+
+.pfm-card {
+  width: 70vw;
+  height: 50vh;
+  background-color: grey;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pfm-card .card-desc {
+  background-color: rgba(252, 249, 248, 0.29);
+  height: 250px;
+  border-radius: 20px;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.pfm-card .act-logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  background-color: var(--header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.pfm-card .act-logo:hover {
+  color: var(--yellow);
+}
+
+#activities .performance .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text-desc {
@@ -324,7 +376,7 @@ video source {
 #form {
   width: 100vw;
   color: white;
-  background-color: var(--green);
+  background-color: var(--dark-yellow);
   margin-top: 0;
 }
 #form .form-container {
@@ -343,7 +395,7 @@ video source {
 
 #submit-btn {
   margin-top: 0.5rem;
-  background-color: var(--header);
+  background-color: var(--nav-bg);
   color: white;
   border-radius: 10px;
   border: none;
@@ -354,7 +406,7 @@ video source {
   box-shadow: 0px 0px 20px white;
 }
 #submit-btn:hover {
-  background-color: var(--nav-bg);
+  background-color: var(--header);
   color: var(--yellow);
 }
 
@@ -478,6 +530,11 @@ video source {
   animation-duration: 2.25s;
 }
 
+/* Waves 4 */
+.waves-4 {
+  margin-bottom: -80px;
+}
+
 /* Event Information */
 
 #information {
@@ -546,8 +603,7 @@ footer {
     font-size: 75.5%;
   }
 
-  section.banner{
-
+  section.banner {
     margin-top: 60px;
   }
 
@@ -663,22 +719,54 @@ footer {
     transform: scaleX(0.2);
   }
 
-  section.banner{
+  section.banner {
     margin-top: 50px;
   }
+
+  #activities .performance {
+    margin-top: 0;
+  }
+
+  .pfm-card .card-desc h3 {
+    font-size: 14px;
+  }
+
+  .pfm-card .card-desc {
+    height: 150px;
+    width: 300px;
+    font-size: 9px;
+    margin: 0 10px;
+  }
+  .pfm-card .act-logo {
+    height: 150px;
+    width: 150px;
+    margin: 0 10px;
+  }
+
+  .waves-4 {
+    margin-bottom: -50px;
+  }
 }
 
-@media (max-width: 590px){
-  #information .contact-person div{
+@media (max-width: 590px) {
+  #information .contact-person div {
     font-size: 1rem;
   }
-
-  .waves-3, .waves-1{
+  .waves-3,
+  .waves-1 {
     margin-bottom: 0px;
   }
-
-  .waves-2{
+  .waves-2 {
     background-color: var(--green);
   }
-}
+  .pfm-card .card-desc {
+    height: 150px;
+    width: 300px;
+    font-size: 9px;
+    margin: 0 10px;
+  }
 
+  .pfm-card .act-logo {
+    display: none;
+  }
+}

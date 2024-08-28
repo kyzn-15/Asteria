@@ -36,9 +36,23 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Favicon -->
-     <link rel="shortcut icon" href="../static/assets/favicon_logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../static/assets/favicon_logo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <nav class="navbarv shadow fixed-top">
@@ -52,7 +66,6 @@
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
         <a href="#activities">Activities</a>
-        <a href="#performance">Performance</a>
         <a href="#form">Form</a>
       </div>
 
@@ -99,11 +112,12 @@
           </feMerge>
         </filter>
       </defs>
+
       <path
         filter="url(#waveShadow)"
-        fill="rgb(135, 153, 71)"
+        fill="rgb(131, 171, 82)"
         fill-opacity="1"
-        d="M0,256L24,245.3C48,235,96,213,144,181.3C192,149,240,107,288,117.3C336,128,384,192,432,202.7C480,213,528,171,576,149.3C624,128,672,128,720,117.3C768,107,816,85,864,85.3C912,85,960,107,1008,106.7C1056,107,1104,85,1152,90.7C1200,96,1248,128,1296,160C1344,192,1392,224,1416,240L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        d="M0,32L20,48C40,64,80,96,120,133.3C160,171,200,213,240,192C280,171,320,85,360,85.3C400,85,440,171,480,202.7C520,235,560,213,600,186.7C640,160,680,128,720,133.3C760,139,800,181,840,165.3C880,149,920,75,960,58.7C1000,43,1040,85,1080,128C1120,171,1160,213,1200,202.7C1240,192,1280,128,1320,117.3C1360,107,1400,149,1420,170.7L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
       ></path>
     </svg>
 
@@ -161,8 +175,11 @@
       </div>
 
       <!-- Waves 2 -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves-2">
-        <!--  shadow -->
+      <svg
+        class="waves-2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <defs>
           <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
@@ -175,11 +192,12 @@
             </feMerge>
           </filter>
         </defs>
+
         <path
           filter="url(#waveShadow)"
-          fill="rgb(63, 58, 88)"
+          fill="rgb(57, 85, 125)"
           fill-opacity="1"
-          d="M0,128L24,117.3C48,107,96,85,144,106.7C192,128,240,192,288,208C336,224,384,192,432,165.3C480,139,528,117,576,117.3C624,117,672,139,720,138.7C768,139,816,117,864,128C912,139,960,181,1008,208C1056,235,1104,245,1152,213.3C1200,181,1248,107,1296,74.7C1344,43,1392,53,1416,58.7L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          d="M0,128L40,149.3C80,171,160,213,240,208C320,203,400,149,480,154.7C560,160,640,224,720,213.3C800,203,880,117,960,117.3C1040,117,1120,203,1200,234.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
     </section>
@@ -187,43 +205,211 @@
     <!-- Activities Section -->
     <section id="activities" class="section">
       <div class="container">
-        <h2 class="heading hidden text-shadow">Asteria's Activities</h2>
-        <section class="divider"></section>
-        <div class="activities-card">
-          <div class="list hidden">
-            <i class="bx bxs-camera bx-tada hidden"></i>
-          </div>
-          <div class="activities-description">
-            <h2 class="hidden">Photobooth</h2>
-            <h5 class="text-desc hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, accusantium architecto. Sit a debitis tenetur mollitia
-              natus exercitationem autem amet, nobis odio quam nam error
-              molestias? Et nesciunt pariatur assumenda.
-            </h5>
+        <h2 class="heading hidden text-shadow">
+          ASTERIA'S ACTIVITIES & PERFORMANCES
+        </h2>
+      </div>
+      <div class="performance">
+        <div class="kelas11">
+          <h1 class="heading text-shadow hidden judul">DAY 1</h1>
+          <div class="card-container">
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Padus Performance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bi bi-music-note-beamed"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Ice Breaking</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bi bi-person-arms-up"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Leadership Seminar</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bi bi-easel-fill"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Cooking Activities</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bx bxs-bowl-rice"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Games</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bx bxs-game"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Lomba Yel Yel</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bx bxs-megaphone"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
+
+            <div class="pfm-content hidden">
+              <section class="divider"></section>
+              <div class="pfm-card">
+                <div class="card-desc">
+                  <h3 class="text-shadow">Campfire</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse inventore unde cumque deleniti qui facilis enim ipsa
+                    quibusdam delectus, fuga et neque commodi distinctio? Optio
+                    laboriosam sit perferendis repellendus id.
+                  </p>
+                </div>
+                <div class="act-logo">
+                  <i class="bx bxs-hot"></i>
+                </div>
+              </div>
+              <section class="divider bottom"></section>
+            </div>
           </div>
         </div>
-        <section class="divider bottom"></section>
-        <section class="divider"></section>
-        <div class="activities-card genap">
-          <div class="list hidden">
-            <i class="bx bxs-camera bx-tada"></i>
+        <div class="kelas12">
+          <h1 class="heading text-shadow hidden judul">DAY 2</h1>
+          <div class="pfm-content hidden">
+            <section class="divider"></section>
+            <div class="pfm-card">
+              <div class="card-desc">
+                <h3 class="text-shadow">Band Performance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  inventore unde cumque deleniti qui facilis enim ipsa quibusdam
+                  delectus, fuga et neque commodi distinctio? Optio laboriosam
+                  sit perferendis repellendus id.
+                </p>
+              </div>
+              <div class="act-logo">
+                <i class="fa-solid fa-guitar"></i>
+              </div>
+            </div>
+            <section class="divider bottom"></section>
           </div>
-          <div class="activities-description">
-            <h2 class="hidden">Photobooth</h2>
-            <h5 class="text-desc hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, accusantium architecto. Sit a debitis tenetur mollitia
-              natus exercitationem autem amet, nobis odio quam nam error
-              molestias? Et nesciunt pariatur assumenda.
-            </h5>
+
+          <div class="pfm-content hidden">
+            <section class="divider"></section>
+            <div class="pfm-card">
+              <div class="card-desc">
+                <h3 class="text-shadow">Solo Performance</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  inventore unde cumque deleniti qui facilis enim ipsa quibusdam
+                  delectus, fuga et neque commodi distinctio? Optio laboriosam
+                  sit perferendis repellendus id.
+                </p>
+              </div>
+              <div class="act-logo">
+                <i class="bx bxs-microphone-alt"></i>
+              </div>
+            </div>
+            <section class="divider bottom"></section>
+          </div>
+
+          <div class="pfm-content hidden">
+            <section class="divider"></section>
+            <div class="pfm-card">
+              <div class="card-desc">
+                <h3 class="text-shadow">Jalan Santai & Senam</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  inventore unde cumque deleniti qui facilis enim ipsa quibusdam
+                  delectus, fuga et neque commodi distinctio? Optio laboriosam
+                  sit perferendis repellendus id.
+                </p>
+              </div>
+              <div class="act-logo">
+                <i class="fa-solid fa-person-running"></i>
+              </div>
+            </div>
+            <section class="divider bottom"></section>
           </div>
         </div>
-        <section class="divider bottom"></section>
       </div>
     </section>
 
     <!-- Waves 3 -->
+
     <svg
       class="waves-3"
       xmlns="http://www.w3.org/2000/svg"
@@ -243,9 +429,9 @@
       </defs>
       <path
         filter="url(#waveShadow)"
-        fill="rgb(135, 153, 71)"
+        fill="rgb(223, 199, 91)"
         fill-opacity="1"
-        d="M0,96L80,122.7C160,149,320,203,480,218.7C640,235,800,213,960,186.7C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        d="M0,64L80,101.3C160,139,320,213,480,245.3C640,277,800,267,960,229.3C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
       ></path>
     </svg>
 
@@ -282,6 +468,33 @@
         <div class="star"></div>
         <div class="star"></div>
       </div>
+
+      <!-- Waves 4 -->
+      <svg
+        class="waves-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
+            <feMerge>
+              <feMergeNode in="shadow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <path
+          filter="url(#waveShadow)"
+          fill="rgb(63, 102, 155)"
+          fill-opacity="1"
+          d="M0,0L40,26.7C80,53,160,107,240,122.7C320,139,400,117,480,101.3C560,85,640,75,720,64C800,53,880,43,960,74.7C1040,107,1120,181,1200,186.7C1280,192,1360,128,1400,96L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
     </section>
 
     <!-- Event Information -->
@@ -302,12 +515,16 @@
         </p>
       </a>
       <div class="contact-person">
-        <div class="sosmed instagram"><i class="bi bi-instagram"></i> Instagram</div>
+        <div class="sosmed instagram">
+          <i class="bi bi-instagram"></i> Instagram
+        </div>
         <div class="sosmed twitter"><i class="bi bi-twitter"></i> Twitter</div>
         <div class="sosmed tiktok"><i class="bi bi-tiktok"></i> Tiktok</div>
         <div class="sosmed line"><i class="bi bi-line"></i> Line</div>
         <div class="sosmed youtube"><i class="bi bi-youtube"></i> Youtube</div>
-        <div class="sosmed email"><i class="bi bi-envelope-fill"></i> Email</div>
+        <div class="sosmed email">
+          <i class="bi bi-envelope-fill"></i> Email
+        </div>
       </div>
     </section>
 
