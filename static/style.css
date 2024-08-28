@@ -272,6 +272,7 @@ div.list {
   /* margin-bottom: 70px; */
 }
 
+
 .pfm-card {
   width: 70vw;
   height: 50vh;
@@ -280,6 +281,9 @@ div.list {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 5px solid white;
+  margin: 20px 0;
+  box-shadow: 0 0 20px white;
 }
 
 .pfm-card .card-desc {
