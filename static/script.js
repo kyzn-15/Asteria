@@ -1,30 +1,43 @@
-// Shown up 
+// Shown up
 document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        })
-    })
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));
-})
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
+});
 
 // Toggle
-document.addEventListener('DOMContentLoaded', function () {
-    const navbarNav = document.querySelector('.navbarv-nav');
-    const hm = document.querySelector('#hamburger-menu');
-  
-    if (hm && navbarNav) {
-      hm.onclick = () => {
-        navbarNav.classList.toggle('active');
-      };
-      document.addEventListener('click', function (e) {
-        if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
-          navbarNav.classList.remove('active');
-        }
-      });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarNav = document.querySelector(".navbarv-nav");
+  const hm = document.querySelector("#hamburger-menu");
+
+  if (hm && navbarNav) {
+    hm.onclick = () => {
+      navbarNav.classList.toggle("active");
+    };
+    document.addEventListener("click", function (e) {
+      if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
+        navbarNav.classList.remove("active");
+      }
+    });
+  }
 });
-  
+
+// Detail Activities
+function showDetail(eventName, classEvent) {
+  document.getElementById("detail").style.display = "block";
+  const heading = document.getElementById("detail-heading");
+  const logo = document.getElementById("detail-logo");
+
+  heading.innerText = eventName;
+  logo.className = classEvent;
+}
+
+function closeDetail() {
+  document.getElementById("detail").style.display = "none";
+}
