@@ -36,6 +36,7 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbarv {
   display: flex;
   justify-content: space-between;
@@ -57,10 +58,6 @@ body {
   color: var(--yellow);
   text-decoration: none;
   text-shadow: 0px 0px 20px white;
-}
-
-.navbarv .navbarv-extra {
-  display: none;
 }
 
 .logo-wrap {
@@ -130,19 +127,19 @@ body {
   font-size: 4rem;
 }
 
-section.preview{
+section.preview {
   --size: 100vw;
   width: var(--size);
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 60px;
   background-color: var(--background-color);
 }
 
-section.preview .banner-about{
+section.preview .banner-about {
   --size: 80vw;
   width: var(--size);
-  height: calc(var(--size) /1.6);
+  height: calc(var(--size) / 1.6);
   margin-top: 2rem;
   background-image: url(../static/assets/Asteria_Banner.png);
   background-size: cover;
@@ -150,8 +147,7 @@ section.preview .banner-about{
   border: 0.2rem solid white;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 20px white;
-} 
-
+}
 
 /* About Section */
 #about {
@@ -177,7 +173,7 @@ section.preview .banner-about{
   font-size: 1.5rem;
 }
 
-img.about-logo{
+img.about-logo {
   filter: drop-shadow(0px 0px 15px white);
 }
 
@@ -187,7 +183,7 @@ img.about-logo{
 }
 
 /* Reverse */
-.reverse-wrap{
+.reverse-wrap {
   width: 100vw;
   background-color: var(--green);
 }
@@ -202,11 +198,11 @@ img.about-logo{
 }
 
 /* About Preview */
-.waves-2{
+.waves-2 {
   background-color: var(--green);
 }
 
-.about-wrap{
+.about-wrap {
   background-color: var(--dark-yellow);
   width: 100vw;
   display: flex;
@@ -214,10 +210,10 @@ img.about-logo{
   flex-direction: column;
 }
 
-.about-banner{
+.about-banner {
   --size: 50vw;
   width: var(--size);
-  height: calc(var(--size) /1.6);
+  height: calc(var(--size) / 1.6);
   margin-top: 2rem;
   background-image: url(../static/assets/Asteria_Banner.png);
   background-size: cover;
@@ -313,7 +309,6 @@ footer {
     margin-bottom: -60px;
   }
 
-
   #information {
     flex-direction: column;
     align-items: center;
@@ -351,28 +346,28 @@ footer {
     overflow-x: hidden;
   }
 
-  #about .container{
+  #about .container {
     flex-direction: column-reverse;
   }
 
-  #about .container.reverse{
+  #about .container.reverse {
     flex-direction: column-reverse;
-  } 
+  }
 
   #about .container .description p {
     font-size: 12px;
   }
 
-  #about .container img{
+  #about .container img {
     width: 200px;
     height: 200px;
   }
 
-  #about .container.reverse img{
+  #about .container.reverse img {
     --size: 200px;
     width: 350px;
     height: var(--size);
-  } 
+  }
 
   #hamburger-menu {
     display: inline-block;
