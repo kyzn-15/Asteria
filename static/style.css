@@ -284,6 +284,7 @@ div.list {
   border: 5px solid white;
   margin: 20px 0;
   box-shadow: 0 0 20px white;
+  border-radius: 5px;
 }
 
 .pfm-card .card-desc {
