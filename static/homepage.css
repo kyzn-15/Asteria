@@ -32,14 +32,14 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbarv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
   background-color: var(--nav-bg);
-  max-height: 6rem;
-  /* border-bottom: 1px solid #513c28; */
+  max-height: 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,10 +55,6 @@ body {
   text-shadow: 0px 0px 20px white;
 }
 
-.navbarv .navbarv-extra {
-  display: none;
-}
-
 .logo-wrap {
   display: flex;
   justify-content: center;
@@ -67,7 +63,7 @@ body {
 }
 
 .logo-wrap img {
-  --size: 6rem;
+  --size: 8rem;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
@@ -131,7 +127,7 @@ section.preview{
   width: var(--size);
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 60px;
   background-color: var(--background-color);
 }
 
