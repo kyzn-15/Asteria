@@ -9,10 +9,14 @@
   --dark-yellow: rgb(223, 199, 91);
 }
 
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .text-shadow {
@@ -24,7 +28,6 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -36,7 +39,6 @@ body {
 }
 
 /* Navbar */
-/* Navbar */
 .navbarv {
   display: flex;
   justify-content: space-between;
@@ -44,7 +46,6 @@ body {
   padding: 1.4rem 7%;
   background-color: var(--nav-bg);
   max-height: 5rem;
-  /* border-bottom: 1px solid #513c28; */
   position: fixed;
   top: 0;
   left: 0;
@@ -58,6 +59,10 @@ body {
   color: var(--yellow);
   text-decoration: none;
   text-shadow: 0px 0px 20px white;
+}
+
+.navbarv .navbarv-extra {
+  display: none;
 }
 
 .logo-wrap {
@@ -132,7 +137,7 @@ section.preview {
   width: var(--size);
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
   background-color: var(--background-color);
 }
 
@@ -140,7 +145,7 @@ section.preview .banner-about {
   --size: 80vw;
   width: var(--size);
   height: calc(var(--size) / 1.6);
-  margin-top: 2rem;
+  margin-top: 20px;
   background-image: url(../static/assets/Asteria_Banner.png);
   background-size: cover;
   background-position: center;
