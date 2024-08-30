@@ -14,6 +14,9 @@
   --red: rgb(247, 135, 98);
 }
 
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +39,6 @@ body#about {
   padding: 1.4rem 7%;
   background-color: var(--nav-bg);
   max-height: 5rem;
-  /* border-bottom: 1px solid #513c28; */
   position: fixed;
   top: 0;
   left: 0;
@@ -253,12 +255,18 @@ div.content h5 {
   height: var(--size);
   width: var(--size);
   border-radius: 50%;
-  background-image: url(../static/assets/Astrotter.png);
   background-color: white;
   background-position: center;
   background-size: cover;
   box-shadow: -0.063rem 0.063rem 1.25rem 0.063rem rgb(229, 227, 227);
   border: 0.2rem solid white;
+}
+
+.male {
+  background-image: url(../static/assets/astrotter-male.jpeg);
+}
+.female {
+  background-image: url(../static/assets/astrotter-female.jpeg);
 }
 
 #end {

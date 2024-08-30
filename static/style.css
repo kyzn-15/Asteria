@@ -9,10 +9,14 @@
   --dark-yellow: rgb(223, 199, 91);
 }
 
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .hidden {
@@ -31,7 +35,6 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -65,6 +68,10 @@ body {
   text-shadow: 0px 0px 20px white;
 }
 
+.navbarv .navbarv-extra {
+  display: none;
+}
+
 .logo-wrap {
   display: flex;
   justify-content: center;
@@ -73,7 +80,7 @@ body {
 }
 
 .logo-wrap img {
-  --size: 8rem;
+  --size: 10rem;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
@@ -411,6 +418,9 @@ div.list {
   width: 100%;
   height: auto;
   display: block;
+  border: 5px solid white;
+  padding: 0;
+  margin: 0;
 }
 .gallery-item.landscape video {
   aspect-ratio: 16/9;
@@ -674,7 +684,6 @@ video source {
   font-weight: 600;
   text-shadow: 0 0 10px black;
   display: none;
-
 }
 
 .chat-box.show-box {
@@ -771,6 +780,10 @@ footer {
     font-size: 3rem;
   }
 
+  .navbarv {
+    padding: 3rem;
+  }
+
   .logo-wrap a.navbarv-logo {
     font-size: 1.3rem;
     text-align: center;
@@ -791,6 +804,10 @@ footer {
     height: 100vh;
     transition: 0.3s;
     box-shadow: 0px 0px 20px white;
+  }
+
+  .navbarv .navbarv-extra {
+    display: inline-block;
   }
 
   .navbarv .navbarv-nav.active {
@@ -818,7 +835,7 @@ footer {
   }
 
   section.banner {
-    margin-top: 50px;
+    margin-top: -40px;
   }
 
   #activities .performance {
