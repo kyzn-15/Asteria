@@ -47,6 +47,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <!-- Favicon -->
     <link
       rel="shortcut icon"
@@ -216,31 +219,52 @@
         <div class="kelas11">
           <h1 class="heading text-shadow hidden judul">DAY 1</h1>
           <div class="card-container">
-            <div onclick="showDetail('Padus Performance', 'bi bi-music-note-beamed')" class="card hidden">
+            <div
+              onclick="showDetail('Padus Performance', 'bi bi-music-note-beamed', 'Performance yang tak akan kalah seruh dari team Paduan Suara membawakan lagu ‘nama lagu’ dengan suasana yang luar biasa cocok untuk event ASTERIA. Performance ini tentu memberi semangat dan menyenangkan bagi semua yang menyaksikannya.')"
+              class="card hidden"
+            >
               <i class="bi bi-music-note-beamed"></i>
               <p>Padus<br />Performance</p>
             </div>
-            <div onclick="showDetail('Ice Breaking', 'bi bi-person-arms-up')" class="card hidden">
+            <div
+              onclick="showDetail('Ice Breaking', 'bi bi-person-arms-up', ' MC akan mengajak siswa siswi untuk mengikuti ice breaking agar dapat memeriahkan acara dan menegaskan kesemangatan diantara siswa siswi sembari meningkatkan tingkat percaya diri dari setiap siswa. Salah satu contoh ice breaking adalah quiz mengenai IGS.')"
+              class="card hidden"
+            >
               <i class="bi bi-person-arms-up"></i>
               <p>Ice<br />Breaking</p>
             </div>
-            <div onclick="showDetail('Leadership Seminar', 'bi bi-easel-fill')" class="card hidden">
+            <div
+              onclick="showDetail('Leadership Seminar', 'bi bi-easel-fill', 'Seorang lecturer akan memberi materi berkaitan dengan leadership kepada murid myrid. Dengan diadakannya seminar ini, siswa siswi bisa mendalami ilmu masing masing tentang skill kepemimpinan. Seminar ini memberi arahan dan membekali mereka untuk mengembang skillnya.')"
+              class="card hidden"
+            >
               <i class="bi bi-easel-fill"></i>
               <p>Leadership<br />Seminar</p>
             </div>
-            <div onclick="showDetail('Cooking Activities', 'bx bxs-bowl-rice')" class="card hidden">
+            <div
+              onclick="showDetail('Cooking Activities', 'bx bxs-bowl-rice', 'Siswa siswi akan diminta untuk memasak makan malamnya di sekolah. Mereka akan dibagi menjadi kelompok kelompok kecil. Siswa siswi dapat menentukan hindangan yang dimasak dan membawa bahan bahannya dari rumah. Kegiatan ini dirancang untuk melatih skill dan keterampilan memasak.')"
+              class="card hidden"
+            >
               <i class="bx bxs-bowl-rice"></i>
               <p>Cooking<br />Activities</p>
             </div>
-            <div onclick="showDetail('Games', 'bx bxs-game')" class="card hidden">
+            <div
+              onclick="showDetail('Games', 'bx bxs-game', 'Menyediakan kesempatan untuk siswa-siswi supaya bisa berpartisipasi dalam permainan yang menjalurkan semangat kompetitif, menguatkan keakraban antara anggota, dan meningkatkan keterampilan interpersonal. Games yang akan diselenggarakan meliputi Musical chairs, Ular Naga, Estafet Sarung dan Balap Balon.')"
+              class="card hidden"
+            >
               <i class="bx bxs-game"></i>
               <p>Games</p>
             </div>
-            <div onclick="showDetail('Lomba Yel Yel', 'bx bxs-megaphone')" class="card hidden">
+            <div
+              onclick="showDetail('Lomba Yel Yel', 'bx bxs-megaphone', 'Siswa Siswi akan diminta untuk menampilkan hasil kerjasamanya dalam bentuk yelyel. Kegiatan ini efektif dalam meningkatkan kekerabatan antar anggota kelompok dan mengurangi rasa kemaluan seseorang.')"
+              class="card hidden"
+            >
               <i class="bx bxs-megaphone"></i>
               <p>Lomba<br />Yel Yel</p>
             </div>
-            <div onclick="showDetail('Campfire', 'bx bxs-hot')" class="card card-7 hidden">
+            <div
+              onclick="showDetail('Campfire', 'bx bxs-hot', 'Siswa siswi akan duduk mengelilingi api unggun yang dinyalakan di tengah dengan jarak yang aman. Kegiatan ini bisa diiringi dengan lagu atau musik yang cocok dengan suasananya. Momen ini akan dikenang siswa siswi sebagai puncak di masa masa sekolahnya.')"
+              class="card card-7 hidden"
+            >
               <i class="bx bxs-hot"></i>
               <p>Campfire</p>
             </div>
@@ -249,21 +273,30 @@
         <div class="kelas12">
           <h1 class="heading text-shadow hidden judul">DAY 2</h1>
           <div class="card-container">
-            <div onclick="showDetail('Band Performance', 'fa-solid fa-guitar')" class="card hidden">
+            <div
+              onclick="showDetail('Band Performance', 'fa-solid fa-guitar', 'Pertunjukkan yang dibawa band-band ‘nama band’ yang sungguh mengkagumkan, Menunjukkan skill dan kerjasama antara anggota band. Dengan lagu ‘nama lagu’ yang menciptakan suasana penuh energi tentunya akan menyemangati siswa siswi untuk hari kedua ASTERIA')"
+              class="card hidden"
+            >
               <i class="fa-solid fa-guitar"></i>
               <p>
                 Band <br />
                 Performance
               </p>
             </div>
-            <div onclick="showDetail('Solo Performance', 'bx bxs-microphone-alt')" class="card hidden">
+            <div
+              onclick="showDetail('Solo Performance', 'bx bxs-microphone-alt', 'Performance- performance yang menarik perhatian dan akan dikenang penyaksinya yang dibawa oleh: Alif Danendra, Jason Marvel dan Muhammad Yusuf dengan berbagai lagu yang sedang populer. ')"
+              class="card hidden"
+            >
               <i class="bx bxs-microphone-alt"></i>
               <p>
                 Solo <br />
                 Performance
               </p>
             </div>
-            <div onclick="showDetail('Jalan Santai', 'fa-solid fa-person-running')" class="card hidden">
+            <div
+              onclick="showDetail('Jalan Santai', 'fa-solid fa-person-running', 'Siswa siswi akan jalan bersama di pagi hari berdasarkan rute yang telah ditentukan. Pasti, kegiatan ini akan menyegarkan mereka dan melatih tubuhnya supaya menjadi lebih sehat dan bugar.')"
+              class="card hidden"
+            >
               <i class="fa-solid fa-person-running"></i>
               <p>Jalan <br />Santai</p>
             </div>
@@ -279,7 +312,7 @@
           <div onclick="closeDetail()" class="close">X</div>
           <div class="content-desc">
             <h2 id="detail-heading">Band Performance</h2>
-            <p>
+            <p id="detail-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               magni impedit veniam quia quod unde dignissimos officia
               consequuntur harum. Quidem necessitatibus doloribus quae at! Cum
@@ -412,6 +445,15 @@
         </div>
       </div>
     </section>
+
+    <!-- ChatBox -->
+    <img
+      onclick="showMascot()"
+      id="chat-mascott"
+      src="../static/assets/Astrotter.png"
+      alt=""
+    />
+    <div class="chat-box" id="chatBox"></div>
 
     <!-- Footer -->
     <footer>

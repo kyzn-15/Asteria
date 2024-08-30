@@ -197,7 +197,7 @@ section.banner .gradient-banner {
 .detail {
   display: none;
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -590,7 +590,7 @@ video source {
 
 /* Waves 4 */
 .waves-4 {
-  margin-bottom: -80px;
+  margin-bottom: -50px;
 }
 
 /* Event Information */
@@ -644,6 +644,46 @@ video source {
 #information .contact-person div:hover {
   color: var(--header);
   text-shadow: 0 0 1rem var(--header);
+}
+
+/* Chat Box */
+#chat-mascott {
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  right: -50px;
+  z-index: 1000;
+  width: 250px;
+  height: 150px;
+}
+.chat-box {
+  background-color: var(--light-green);
+  border: 4px solid white;
+  box-shadow: 0 0 20px white;
+  width: 250px;
+  height: 150px;
+  position: fixed;
+  right: 20px;
+  z-index: 100000;
+  bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 600;
+  text-shadow: 0 0 10px black;
+  display: none;
+
+}
+
+.chat-box.show-box {
+  display: flex;
+}
+
+.typed-cursor {
+  position: fixed;
+  z-index: 10000;
 }
 
 /* Footer */
@@ -793,6 +833,18 @@ footer {
   #activities .performance .kelas12 .card-container {
     display: flex;
     flex-direction: column;
+  }
+
+  #chat-mascott {
+    width: 200px;
+    height: 100px;
+  }
+
+  .chat-box {
+    width: 200px;
+    height: 100px;
+    right: 20px;
+    bottom: 130px;
   }
 }
 
