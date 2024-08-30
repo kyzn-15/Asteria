@@ -134,28 +134,28 @@
         <div class="gallery-grid">
           <!-- Landscape Videos -->
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item landscape">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/landscape.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -164,14 +164,14 @@
 
           <!-- Portrait Videos -->
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p class="hidden">Description of the video</p>
           </div>
           <div class="gallery-item portrait">
-            <video autoplay muted loop playsinline>
+            <video controls>
               <source src="../static/assets/portrait.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -370,7 +370,10 @@
         </p>
 
         <h3>Jadi bagian dari Asteria sekarang!</h3>
-        <button id="submit-btn" type="submit">Join Us</button>
+        <div class="btn-container">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1eMbDDPdKCNFjtGPLn_MMcGZ6kL9DhWyRYLRvpwfU8IRC-w/viewform" target="_blank" class="join-btn" id="submit-btn" type="submit">Join Us</a>
+          <a href="https://www.twibbonize.com/asteria-24" target="_blank" class="twibbon-btn" id="submit-btn" type="submit">Download Twibbon</a>
+        </div>
       </div>
 
       <!-- Starfall Animation -->
@@ -433,16 +436,16 @@
         </p>
       </a>
       <div class="contact-person">
-        <div class="sosmed instagram">
+        <a href="#" target="_blank" class="sosmed instagram">
           <i class="bi bi-instagram"></i> Instagram
-        </div>
-        <div class="sosmed twitter"><i class="bi bi-twitter"></i> Twitter</div>
-        <div class="sosmed tiktok"><i class="bi bi-tiktok"></i> Tiktok</div>
-        <div class="sosmed line"><i class="bi bi-line"></i> Line</div>
-        <div class="sosmed youtube"><i class="bi bi-youtube"></i> Youtube</div>
-        <div class="sosmed email">
+        </a>
+        <a href="#" target="_blank" class="sosmed twitter"><i class="bi bi-twitter"></i> Twitter</a>
+        <a href="#" target="_blank" class="sosmed tiktok"><i class="bi bi-tiktok"></i> Tiktok</a>
+        <a href="#" target="_blank" class="sosmed line"><i class="bi bi-line"></i> Line</a>
+        <a href="#" target="_blank" class="sosmed youtube"><i class="bi bi-youtube"></i> Youtube</a>
+        <a href="#" target="_blank" class="sosmed email">
           <i class="bi bi-envelope-fill"></i> Email
-        </div>
+        </a>
       </div>
     </section>
 
@@ -450,7 +453,7 @@
     <img
       onclick="showMascot()"
       id="chat-mascott"
-      src="../static/assets/Astrotter.png"
+      src="../static/assets/palak_otter-removebg-preview.png"
       alt=""
     />
     <div class="chat-box" id="chatBox"></div>
