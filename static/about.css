@@ -15,7 +15,7 @@
 }
 
 /* Google font */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   margin: 0;
@@ -315,26 +315,30 @@ div.content h5 {
   min-width: 200px;
 }
 
-#information .contact-person div {
+#information .contact-person a {
+  color: white;
+  text-decoration: none;
   cursor: pointer;
   font-size: 19px;
   margin: 5px 0;
   transition: 0.2s;
+  text-shadow: 0 0 1rem white;
 }
-#information .contact-person div:hover {
+
+#information .contact-person a:hover {
   color: var(--header);
   text-shadow: 0 0 1rem var(--header);
 }
-
 /* Chat Box */
 #chat-mascott {
+  border-radius: 50%;
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   cursor: pointer;
-  right: -50px;
-  z-index: 100000;
-  width: 250px;
-  height: 150px;
+  right: -30px;
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
 }
 .chat-box {
   background-color: var(--light-green);
@@ -344,7 +348,7 @@ div.content h5 {
   height: 150px;
   position: fixed;
   right: 20px;
-  z-index: 100000;
+  z-index: 1000;
   bottom: 180px;
   display: flex;
   justify-content: center;
@@ -411,7 +415,7 @@ footer {
     font-size: 12px;
   }
 
-  #information .contact-person div {
+  #information .contact-person a {
     margin: 0 5px;
   }
 }
@@ -486,15 +490,15 @@ footer {
   }
 
   #chat-mascott {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .chat-box {
     width: 200px;
     height: 100px;
     right: 20px;
-    bottom: 130px;
+    bottom: 140px;
   }
 }
 
@@ -504,7 +508,7 @@ footer {
     flex-direction: column-reverse;
     max-width: 100vw;
   }
-  #information .contact-person div {
+  #information .contact-person a {
     font-size: 1rem;
     flex-direction: column;
   }
