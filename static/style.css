@@ -278,6 +278,7 @@ section.divider {
 
 .waves-2 {
   background-color: var(--green);
+  margin-bottom: -50px;
 }
 
 .genap {
@@ -410,28 +411,32 @@ div.list {
   color: white;
 }
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.gallery-item video {
-  width: 100%;
+
+.gallery-grid iframe .html5-video-container {
+}
+
+/* .gallery-item iframe { */
+  /* width: 100%;
   height: auto;
   display: block;
   border: 5px solid white;
   border-radius: 5px;
   box-shadow: 0 0 20px white;
   padding: 0;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; */
+/* } */
 
-#gallery svg {
+/* #gallery svg {
   margin-bottom: -100px;
 }
 
-video source {
+iframe {
   border: 0.5rem solid white;
-}
+} */
 
 /* Form */
 .waves-3 {
