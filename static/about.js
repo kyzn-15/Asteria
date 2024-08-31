@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const aboutHead = document.getElementById("about-heading");
 
-  const about = ["Tentang Kami", "About Us"];
+  const about = ["Tentang Kami", "About Us", "私たちについて"];
 
   changeLang.onclick = () => {
     langOption.classList.toggle("show-box");
@@ -91,6 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutHead.innerText = about[0];
       } else if (changeLang.innerText == "ENG") {
         aboutHead.innerText = about[1];
+      } else if (changeLang.innerText == "JP") {
+        aboutHead.innerText = about[2];
       }
     });
   });

@@ -79,8 +79,7 @@
           </div>
           <div id="langOpt">
             <a class="lang-opt" href="#">ENG</a>
-            <a class="lang-opt" href="#">FRA</a>
-            <a class="lang-opt" href="#">GER</a>
+            <a class="lang-opt" href="#">JP</a>
           </div>
         </div>
       </div>
@@ -105,7 +104,7 @@
     <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
-        <h2 id="about-heading" class="heading hidden text-shadow">About Asteria</h2>
+        <h2 id="about-heading" class="heading hidden text-shadow">Tentang Asteria</h2>
         <p id="about-desc" class="hidden text-shadow">
           ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang
           Bersinar". Acara ini melibatkan anggota organisasi organisasi intra
@@ -261,101 +260,113 @@
     
 
     <!-- Activities Section -->
-    <section id="activities" class="section">
-      <div class="container">
-        <h2 class="heading hidden text-shadow">
-          ASTERIA'S ACTIVITIES & PERFORMANCES
-        </h2>
-      </div>
-      <div class="performance">
-        <div class="kelas11">
-          <h1 class="heading text-shadow hidden judul">DAY 1</h1>
-          <div class="card-container">
-            <div
-              onclick="showDetail('Padus Performance', 'bi bi-music-note-beamed', 'Performance yang tak akan kalah seruh dari team Paduan Suara membawakan lagu ‘nama lagu’ dengan suasana yang luar biasa cocok untuk event ASTERIA. Performance ini tentu memberi semangat dan menyenangkan bagi semua yang menyaksikannya.')"
-              class="card hidden"
-            >
-              <i class="bi bi-music-note-beamed"></i>
-              <p class="padus" id="event-name">Padus<br />Performance</p>
-            </div>
-            <div
-              onclick="showDetail('Ice Breaking', 'bi bi-person-arms-up', ' MC akan mengajak siswa siswi untuk mengikuti ice breaking agar dapat memeriahkan acara dan menegaskan kesemangatan diantara siswa siswi sembari meningkatkan tingkat percaya diri dari setiap siswa. Salah satu contoh ice breaking adalah quiz mengenai IGS.')"
-              class="card hidden"
-            >
-              <i class="bi bi-person-arms-up"></i>
-              <p class="ice" id="event-name">Ice<br />Breaking</p>
-            </div>
-            <div
-              onclick="showDetail('Leadership Seminar', 'bi bi-easel-fill', 'Seorang lecturer akan memberi materi berkaitan dengan leadership kepada murid myrid. Dengan diadakannya seminar ini, siswa siswi bisa mendalami ilmu masing masing tentang skill kepemimpinan. Seminar ini memberi arahan dan membekali mereka untuk mengembang skillnya.')"
-              class="card hidden"
-            >
-              <i class="bi bi-easel-fill"></i>
-              <p class="leader" id="event-name">Leadership<br />Seminar</p>
-            </div>
-            <div
-              onclick="showDetail('Cooking Activities', 'bx bxs-bowl-rice', 'Siswa siswi akan diminta untuk memasak makan malamnya di sekolah. Mereka akan dibagi menjadi kelompok kelompok kecil. Siswa siswi dapat menentukan hindangan yang dimasak dan membawa bahan bahannya dari rumah. Kegiatan ini dirancang untuk melatih skill dan keterampilan memasak.')"
-              class="card hidden"
-            >
-              <i class="bx bxs-bowl-rice"></i>
-              <p class="cooking" id="event-name">Cooking<br />Activities</p>
-            </div>
-            <div
-              onclick="showDetail('Games', 'bx bxs-game', 'Menyediakan kesempatan untuk siswa-siswi supaya bisa berpartisipasi dalam permainan yang menjalurkan semangat kompetitif, menguatkan keakraban antara anggota, dan meningkatkan keterampilan interpersonal. Games yang akan diselenggarakan meliputi Musical chairs, Ular Naga, Estafet Sarung dan Balap Balon.')"
-              class="card hidden"
-            >
-              <i class="bx bxs-game"></i>
-              <p class="games" id="event-name">Games</p>
-            </div>
-            <div
-              onclick="showDetail('Lomba Yel Yel', 'bx bxs-megaphone', 'Siswa Siswi akan diminta untuk menampilkan hasil kerjasamanya dalam bentuk yelyel. Kegiatan ini efektif dalam meningkatkan kekerabatan antar anggota kelompok dan mengurangi rasa kemaluan seseorang.')"
-              class="card hidden"
-            >
-              <i class="bx bxs-megaphone"></i>
-              <p class="yelyel" id="event-name">Lomba<br />Yel Yel</p>
-            </div>
-            <div
-              onclick="showDetail('Campfire', 'bx bxs-hot', 'Siswa siswi akan duduk mengelilingi api unggun yang dinyalakan di tengah dengan jarak yang aman. Kegiatan ini bisa diiringi dengan lagu atau musik yang cocok dengan suasananya. Momen ini akan dikenang siswa siswi sebagai puncak di masa masa sekolahnya.')"
-              class="card card-7 hidden"
-            >
-              <i class="bx bxs-hot"></i>
-              <p class="campfire" id="event-name">Campfire</p>
-            </div>
-          </div>
+<section id="activities" class="section">
+  <div class="container">
+    <h2 id="asteria-act" class="heading hidden text-shadow">
+      AKTIVITAS DAN KEGIATAN ASTERIA
+    </h2>
+  </div>
+  <div class="performance">
+    <div class="kelas11">
+      <h1 id="day-1" class="heading text-shadow hidden judul">HARI 1</h1>
+      <div class="card-container">
+        <div
+          onclick="showDetail('Padus Performance', 'bi bi-music-note-beamed', 'Performance yang tak akan kalah seruh dari team Paduan Suara membawakan lagu ‘nama lagu’ dengan suasana yang luar biasa cocok untuk event ASTERIA. Performance ini tentu memberi semangat dan menyenangkan bagi semua yang menyaksikannya.')"
+          class="card hidden"
+        >
+          <i class="bi bi-music-note-beamed"></i>
+          <p class="event-name padus" data-event-key="Padus Performance">Padus<br />Performance</p>
         </div>
-        <div class="kelas12">
-          <h1 class="heading text-shadow hidden judul">DAY 2</h1>
-          <div class="card-container">
-            <div
-              onclick="showDetail('Band Performance', 'fa-solid fa-guitar', 'Pertunjukkan yang dibawa band-band ‘nama band’ yang sungguh mengkagumkan, Menunjukkan skill dan kerjasama antara anggota band. Dengan lagu ‘nama lagu’ yang menciptakan suasana penuh energi tentunya akan menyemangati siswa siswi untuk hari kedua ASTERIA')"
-              class="card hidden"
-            >
-              <i class="fa-solid fa-guitar"></i>
-              <p class="band" id="event-name">
-                Band <br />
-                Performance
-              </p>
-            </div>
-            <div
-              onclick="showDetail('Solo Performance', 'bx bxs-microphone-alt', 'Performance- performance yang menarik perhatian dan akan dikenang penyaksinya yang dibawa oleh: Alif Danendra, Jason Marvel dan Muhammad Yusuf dengan berbagai lagu yang sedang populer. ')"
-              class="card hidden"
-            >
-              <i class="bx bxs-microphone-alt"></i>
-              <p class="solo" id="event-name">
-                Solo <br />
-                Performance
-              </p>
-            </div>
-            <div
-              onclick="showDetail('Jalan Santai', 'fa-solid fa-person-running', 'Siswa siswi akan jalan bersama di pagi hari berdasarkan rute yang telah ditentukan. Pasti, kegiatan ini akan menyegarkan mereka dan melatih tubuhnya supaya menjadi lebih sehat dan bugar.')"
-              class="card hidden"
-            >
-              <i class="fa-solid fa-person-running"></i>
-              <p class="jalan" id="event-name">Jalan <br />Santai</p>
-            </div>
-          </div>
+        <div
+          onclick="showDetail('Ice Breaking', 'bi bi-person-arms-up', ' MC akan mengajak siswa siswi untuk mengikuti ice breaking agar dapat memeriahkan acara dan menegaskan kesemangatan diantara siswa siswi sembari meningkatkan tingkat percaya diri dari setiap siswa. Salah satu contoh ice breaking adalah quiz mengenai IGS.')"
+          class="card hidden"
+        >
+        <i class="bi bi-person-arms-up"></i>
+          <p class="event-name ice" data-event-key="Ice Breaking">Ice<br />Breaking</p>
         </div>
+        <div
+          onclick="showDetail('Leadership Seminar', 'bi bi-easel-fill', 'Seorang lecturer akan memberi materi berkaitan dengan leadership kepada murid myrid. Dengan diadakannya seminar ini, siswa siswi bisa mendalami ilmu masing masing tentang skill kepemimpinan. Seminar ini memberi arahan dan membekali mereka untuk mengembang skillnya.')"
+          class="card hidden"
+        >
+        <i class="bi bi-easel-fill"></i>
+          <p class="event-name leader" data-event-key="Leadership Seminar">Seminar<br />Kepemimpinan</p>
+        </div>
+
+        <div
+          onclick="showDetail('Cooking Activities', 'bx bxs-bowl-rice', 'Siswa siswi akan diminta untuk memasak makan malamnya di sekolah. Mereka akan dibagi menjadi kelompok kelompok kecil. Siswa siswi dapat menentukan hindangan yang dimasak dan membawa bahan bahannya dari rumah. Kegiatan ini dirancang untuk melatih skill dan keterampilan memasak.')"
+          class="card hidden"
+        >
+        <i class="bx bxs-bowl-rice"></i>
+          <p class="event-name cooking" data-event-key="Cooking Activities">Aktivitas<br />Memasak</p>
+        </div>
+
+        <div
+          onclick="showDetail('Games', 'bx bxs-game', 'Menyediakan kesempatan untuk siswa-siswi supaya bisa berpartisipasi dalam permainan yang menjalurkan semangat kompetitif, menguatkan keakraban antara anggota, dan meningkatkan keterampilan interpersonal. Games yang akan diselenggarakan meliputi Musical chairs, Ular Naga, Estafet Sarung dan Balap Balon.')"
+          class="card hidden"
+        >
+        <i class="bx bxs-game"></i>
+          <p class="event-name games" data-event-key="Games">Permainan</p>
+        </div>
+        
+        <div
+          onclick="showDetail('Campfire', 'bx bxs-hot', 'Siswa siswi akan duduk mengelilingi api unggun yang dinyalakan di tengah dengan jarak yang aman. Kegiatan ini bisa diiringi dengan lagu atau musik yang cocok dengan suasananya. Momen ini akan dikenang siswa siswi sebagai puncak di masa masa sekolahnya.')"
+          class="card hidden"
+        >
+        <i class="bx bxs-hot"></i>
+          <p class="event-name campfire" data-event-key="Campfire">Api<br>Unggun</p>
+        </div>
+
+        <div
+          onclick="showDetail('Lomba Yel Yel', 'bx bxs-megaphone', 'Siswa Siswi akan diminta untuk menampilkan hasil kerjasamanya dalam bentuk yelyel. Kegiatan ini efektif dalam meningkatkan kekerabatan antar anggota kelompok dan mengurangi rasa kemaluan seseorang.')"
+          class="card hidden"
+        >
+        <i class="bx bxs-megaphone"></i>
+          <p class="event-name yelyel" data-event-key="Lomba Yel Yel">Lomba<br />Yel Yel</p>
+        </div>
+
+
       </div>
-    </section>
+    </div>
+    <div class="kelas12">
+      <h1 id="day-2" class="heading text-shadow hidden judul">HARI 2</h1>
+      <div class="card-container">
+        <div
+          onclick="showDetail('Band Performance Day2', 'fa-solid fa-guitar', 'Pertunjukkan yang dibawa band-band ‘nama band’ yang sungguh mengkagumkan, Menunjukkan skill dan kerjasama antara anggota band. Dengan lagu ‘nama lagu’ yang menciptakan suasana penuh energi tentunya akan menyemangati siswa siswi untuk hari kedua ASTERIA.')"
+          class="card hidden"
+        >
+          <i class="fa-solid fa-guitar"></i>
+          <p class="event-name band" data-event-key="Band Performance Day2">
+            Band <br />
+            Performance
+          </p>
+        </div>
+        
+        <div
+          onclick="showDetail('Solo Performance Day2', 'bx bxs-microphone-alt', 'Performance- performance yang menarik perhatian dan akan dikenang penyaksinya yang dibawa oleh: Alif Danendra, Jason Marvel dan Muhammad Yusuf dengan berbagai lagu yang sedang populer. ')"
+          class="card hidden"
+        >
+        <i class="bx bxs-microphone-alt"></i>
+          <p class="event-name solo" data-event-key="Solo Performance Day2">
+            Solo <br />
+            Performance
+          </p>
+        </div>
+
+        <div
+          onclick="showDetail('Jalan Santai Day2', 'fa-solid fa-person-running', 'Siswa siswi akan jalan bersama di pagi hari berdasarkan rute yang telah ditentukan. Pasti, kegiatan ini akan menyegarkan mereka dan melatih tubuhnya supaya menjadi lebih sehat dan bugar.')"
+          class="card hidden"
+        >
+        <i class="fa-solid fa-person-running"></i>
+          <p class="event-name jalan" data-event-key="Jalan Santai Day2">
+            Jalan <br />
+            Santai
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Detail -->
     <div class="detail" id="detail">
