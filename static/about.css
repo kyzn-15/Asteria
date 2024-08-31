@@ -10,7 +10,7 @@
   --darker-yellow: rgb(172, 153, 70);
   --dark-blue: rgb(33, 50, 73);
   --green-yellow: rgb(210, 224, 142);
-  --purple: rgb(116, 79, 147);
+  --purple: rgb(92, 63, 116);
   --red: rgb(247, 135, 98);
 }
 
@@ -29,6 +29,46 @@ body#about {
   padding: 0;
   overflow-x: hidden;
   background-color: var(--background-color);
+}
+
+.intro#splash {
+  position: fixed;
+  z-index: 99999999;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-header#splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo#splash {
+  display: inline-block;
+  opacity: 0;
+  --size: 550pt;
+  max-height: var(--size);
+  max-width: var(--size);
+  transform: scale(0.8);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  filter: drop-shadow(0px 0px 20px white);
+}
+
+.logo#splash.active {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.logo#splash.fade {
+  opacity: 0;
 }
 
 /* Navbar */
@@ -325,7 +365,28 @@ div.content h5 {
 #information .event-credit,
 #information .location,
 #information .contact-person {
-  margin: 0 150px;
+  margin: 0 100px;
+}
+
+#information .event-credit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0px 0px 20px white;
+}
+
+#information .img-footer{
+  --size: 20rem;
+  width: var(--size);
+  height: var(--size);
+  background-position: center;
+  background-size: cover;
+  background-image: url(../static/assets/favicon_logo.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 20px white);
 }
 
 #information .location {
@@ -369,6 +430,7 @@ div.content h5 {
   color: var(--header);
   text-shadow: 0 0 1rem var(--header);
 }
+
 /* Chat Box */
 #chat-mascott {
   border-radius: 50%;
@@ -396,7 +458,8 @@ div.content h5 {
   border-radius: 10px;
   padding: 20px;
   font-weight: 600;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px white;
+  color: var(--background-color);
   display: none;
 }
 
@@ -415,11 +478,18 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  text-shadow: 0px 0px 20px white;
 }
 
 @media (max-width: 1200px) {
   html {
     font-size: 75.5%;
+  }
+
+  .logo#splash {
+    --size: 400pt;
+    width: var(--size);
+    height: var(--size);
   }
   section.anggota div.top {
     width: 80vw;
@@ -453,10 +523,11 @@ footer {
 
   #information .contact-person i {
     font-size: 12px;
+    margin: 0px 0.5rem;
   }
 
   #information .contact-person a {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 
@@ -469,6 +540,11 @@ footer {
     color: var(--yellow);
     text-shadow: 0px 0px 20px white;
     font-size: 3rem;
+  }
+  .logo#splash {
+    --size: 50rem;
+    width: var((--size));
+    height: var((--size));
   }
 
   .navbarv {
@@ -554,6 +630,11 @@ footer {
 }
 
 @media (max-width: 590px) {
+  .logo#splash {
+    --size: 15rem;
+    width: var((--size));
+    height: var((--size));
+  }
   div.ganjil,
   div.genap {
     flex-direction: column-reverse;
@@ -562,5 +643,9 @@ footer {
   #information .contact-person a {
     font-size: 1rem;
     flex-direction: column;
+  }
+  
+  footer{
+    font-size: 0.8rem;
   }
 }

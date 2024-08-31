@@ -58,6 +58,11 @@
     />
   </head>
   <body>
+    <!-- <div class="intro" id="splash">
+      <div class="logo-header" id="splash">
+          <img class="logo" id="splash" src="../static/assets/favicon_logo.png" alt="Logo Asteration">
+      </div>
+    </div> -->
     <nav class="navbarv shadow">
       <div class="logo-wrap">
         <img src="../static/assets/kelompok-6-logo.png" alt="" />
@@ -87,11 +92,12 @@
       <div class="navbarv-extra">
         <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
       </div>
-    </nav>
 
     <!-- Banner -->
     <section class="banner" id="home">
-      <img src="../static/assets/Asteria_Banner.png" alt="" />
+      <img src="../static/assets/Asteria_Animation.gif
+      
+      " alt=""/>
       <section class="gradient-banner"></section>
     </section>
 
@@ -138,6 +144,92 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="hidden text-shadow">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="landscape">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/KHAJqLO1bJo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MShn9N3QhfY""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://youtube.com/embed/-ZCz3QRgLoE?"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://youtube.com/embed/XptDBN-ndqY?"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://youtube.com/embed/dlZenullyco"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://youtube.com/embed/-3LypJrscSU?"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          
+
+            
+          </div>
+    
+          <div class="portrait">
+            <iframe
+              width="315"
+              height="560"
+              src="https://www.youtube.com/embed/37oOt098L_4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="315"
+              height="560"
+              src="https://youtube.com/embed/2eopIrXNDTU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    
       <!-- Waves 2 -->
       <svg
         class="waves-2"
@@ -156,7 +248,7 @@
             </feMerge>
           </filter>
         </defs>
-
+    
         <path
           filter="url(#waveShadow)"
           fill="rgb(57, 85, 125)"
@@ -165,6 +257,7 @@
         ></path>
       </svg>
     </section>
+    
 
     <!-- Activities Section -->
 <section id="activities" class="section">
@@ -275,27 +368,26 @@
   </div>
 </section>
 
-<!-- Detail -->
-<div class="detail" id="detail">
-  <div class="detail-container">
-    <div class="content">
-      <div onclick="closeDetail()" class="close">X</div>
-      <div class="content-desc">
-        <h2 id="detail-heading">Band Performance</h2>
-        <p id="detail-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          magni impedit veniam quia quod unde dignissimos officia
-          consequuntur harum. Quidem necessitatibus doloribus quae at! Cum
-          hic commodi beatae maxime voluptates.
-        </p>
-      </div>
-      <div class="content-logo">
-        <i id="detail-logo"></i>
+    <!-- Detail -->
+    <div class="detail" id="detail">
+      <div class="detail-container">
+        <div class="content">
+          <div onclick="closeDetail()" class="close"><i class="bi bi-x-circle"></i></div>
+          <div class="content-desc">
+            <h2 id="detail-heading">Band Performance</h2>
+            <p id="detail-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              magni impedit veniam quia quod unde dignissimos officia
+              consequuntur harum. Quidem necessitatibus doloribus quae at! Cum
+              hic commodi beatae maxime voluptates.
+            </p>
+          </div>
+          <div class="content-logo">
+            <i id="detail-logo"></i>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
 
     <!-- Waves 3 -->
 
@@ -318,7 +410,7 @@
       </defs>
       <path
         filter="url(#waveShadow)"
-        fill="rgb(223, 199, 91)"
+        fill="rgb(33, 50, 73)"
         fill-opacity="1"
         d="M0,64L80,101.3C160,139,320,213,480,245.3C640,277,800,267,960,229.3C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
       ></path>
@@ -327,10 +419,10 @@
     <!-- Form Section -->
     <section id="form" class="section">
       <div class="form-container">
-        <h2 id="form-heading">
+        <h2 class="hidden">
           Bergabunglah dalam Petualangan Malam yang Tak Terlupakan di Asteria!
         </h2>
-        <p id="form-desc">
+        <p class="hidden">
           Saat malam turun, bintang-bintang menyaksikan kegembiraan tak terbatas
           di SMA Ignatius Global School! Siapkan dirimu untuk merasakan
           petualangan yang menggetarkan hati dalam event Asteria, night camp
@@ -340,10 +432,10 @@
           yang magis.
         </p>
 
-        <h3 id="form-join">Jadi bagian dari Asteria sekarang!</h3>
+        <h3 class="hidden">Jadi bagian dari Asteria sekarang!</h3>
         <div class="btn-container">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1eMbDDPdKCNFjtGPLn_MMcGZ6kL9DhWyRYLRvpwfU8IRC-w/viewform" target="_blank" class="join-btn" id="submit-btn" type="submit">Join Us</a>
-          <a href="https://www.twibbonize.com/asteria-24" target="_blank" class="twibbon-btn" id="submit-btn" type="submit">Download Twibbon</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1eMbDDPdKCNFjtGPLn_MMcGZ6kL9DhWyRYLRvpwfU8IRC-w/viewform" target="_blank" class="join-btn hidden" id="submit-btn" type="submit">Join Us</a>
+          <a href="https://www.twibbonize.com/asteria-24" target="_blank" class="twibbon-btn hidden" id="submit-btn" type="submit">Download Twibbon</a>
         </div>
       </div>
 
@@ -392,8 +484,8 @@
     <!-- Event Information -->
     <section id="information">
       <div class="event-credit">
-        <h1>Asteria</h1>
-        <p>Kelompok 6 Magang OSIS SMA Ignatius Global School 2024/25</p>
+        <div class="img-footer"></div>
+        <h1>Stargazers</h1>
       </div>
       <a
         href="https://www.google.com/maps/place/Ignatius+Global+School/@-2.9710393,104.7589212,17z/data=!3m1!4b1!4m5!3m4!1s0x2e3b77abf5ea07a9:0x753dfe8d5c2ff65d!8m2!3d-2.9710361!4d104.761108?hl=id&shorturl=1"
@@ -410,33 +502,27 @@
         <a href="#" target="_blank" class="sosmed instagram">
           <i class="bi bi-instagram"></i> Instagram
         </a>
-        <a href="#" target="_blank" class="sosmed twitter"><i class="bi bi-twitter"></i> Twitter</a>
-        <a href="#" target="_blank" class="sosmed tiktok"><i class="bi bi-tiktok"></i> Tiktok</a>
-        <a href="#" target="_blank" class="sosmed line"><i class="bi bi-line"></i> Line</a>
-        <a href="#" target="_blank" class="sosmed youtube"><i class="bi bi-youtube"></i> Youtube</a>
+        <a href="#" target="_blank" class="sosmed twitter"
+          ><i class="bi bi-twitter"></i> Twitter</a
+        >
+        <a href="#" target="_blank" class="sosmed tiktok"
+          ><i class="bi bi-tiktok"></i> Tiktok</a
+        >
+        <a href="#" target="_blank" class="sosmed line"
+          ><i class="bi bi-line"></i> Line</a
+        >
+        <a href="#" target="_blank" class="sosmed youtube"
+          ><i class="bi bi-youtube"></i> Youtube</a
+        >
         <a href="#" target="_blank" class="sosmed email">
           <i class="bi bi-envelope-fill"></i> Email
         </a>
       </div>
     </section>
 
-    <!-- ChatBox -->
-    <img
-      onclick="showMascot()"
-      id="chat-mascott"
-      src="../static/assets/palak_otter-removebg-preview.png"
-      alt=""
-    />
-    <div class="chat-box" id="chatBox"></div>
-
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <p>
-          Copyright © 2024 Sekbid Multimedia (Kelompok 6 / STARGAZERS) Website
-          Asteration
-        </p>
-      </div>
+      Copyright &copy; 2024 Seksi Multimedia Website Kelompok 6 Magang OSIS SMA IGS 
     </footer>
 
     <!-- Bootstrap JS -->
