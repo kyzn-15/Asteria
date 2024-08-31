@@ -76,20 +76,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const stargazerDesc = document.getElementById("stargazer-desc");
   const stargazerMsct = document.getElementById("mascott-desc");
 
-  const about = ["Tentang STARGAZERS", "About STARGAZERS"];
+  const about = ["Tentang STARGAZERS", "About STARGAZERS", "STARGAZERSについて"];
   const about_more = [
     "Lebih Banyak Tentang STARGAZERS",
     "More About STARGAZERS",
+    "STARGAZERSについてもっと詳しく",
   ];
 
   const homeStargazer = [
     "(Pengamat Bintang) merupakan nama Kelompok 6 magang osis 2024. STARGAZERS menggambarkan kelompok 6 sebagai team yang akan melewati kesusahan tantangan dan memiliki semangat juang untuk bekerja dengan tekun yang tinggi sambil mengamat bintang bintang untuk mencari arahan di masa ini.",
     "(Stargazers) is the name of Group 6 in the 2024 OSIS internship program. STARGAZERS represents Group 6 as a team that will overcome challenges with a strong fighting spirit, diligently working while observing the stars to find guidance for the present.",
+    "(Stargazers) は、2024年OSISインターンシッププログラムのグループ6の名前です。STARGAZERSは、困難を克服しながら強い闘志を持って働くチームを代表しており、現在の指針を見つけるために星を観察しながら努力しています。",
   ];
 
   const homeMsct = [
     "Astrotter adalah maskot Stargazers yang berupa berang-berang, hewan yang dikenal sangat dekat dengan alam, terutama di perairan seperti sungai dan danau. Kehadiran berang-berang ini sering kali menjadi bagian dari pengalaman berkemah, yang mencerminkan kedekatan dengan alam yang diinginkan dalam kegiatan camping night tersebut.",
     "Astrotter is the mascot of the Stargazers, represented by an otter, an animal known for its close connection with nature, especially in bodies of water like rivers and lakes. The presence of this otter often becomes part of the camping experience, reflecting the close bond with nature that is desired in the camping night activities.",
+    "AstrotterはStargazersのマスコットで、動物の中でも特に川や湖などの水域との深い関係で知られるカワウソで表現されています。このカワウソの存在は、キャンプ体験の一部となり、キャンプナイトアクティビティで求められる自然との密接な結びつきを反映しています。",
   ];
 
   changeLang.onclick = () => {
@@ -110,12 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
         stargazerMsct.innerText = homeMsct[0];
         aboutHead.innerText = about[0];
         aboutMore.innerText = about_more[0];
-        console.log(about_more[0])
+        console.log(about_more[0]);
       } else if (changeLang.innerText == "ENG") {
         stargazerDesc.innerText = homeStargazer[1];
         stargazerMsct.innerText = homeMsct[1];
         aboutHead.innerText = about[1];
         aboutMore.innerText = about_more[1];
+      } else if (changeLang.innerText == "JP") {
+        stargazerDesc.innerText = homeStargazer[2];
+        stargazerMsct.innerText = homeMsct[2];
+        aboutHead.innerText = about[2];
+        aboutMore.innerText = about_more[2];
       }
     });
   });
