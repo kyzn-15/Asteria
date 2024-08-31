@@ -138,7 +138,7 @@ section.fotbar .fotbar-img {
   width: var(--size);
   height: calc(var(--size) / 1.6);
   margin-top: 2rem;
-  background-image: url(../static/assets/Asteria_Banner.png);
+  background-image: url(../static/assets/fotbar.jpg);
   background-size: cover;
   background-position: center;
   border: 0.2rem solid white;
