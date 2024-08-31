@@ -416,8 +416,16 @@ div.list {
   align-items: center;
 }
 
-.gallery-grid iframe .html5-video-container {
+.gallery-grid .landscape {
+  width: 250px;
+  height: 150px;
 }
+
+.gallery-grid .portrait {
+  width: 150px;
+  height: 250px;
+}
+
 
 /* .gallery-item iframe { */
   /* width: 100%;
