@@ -94,6 +94,46 @@ body {
   z-index: 9999;
 }
 
+.navbarv .navbarv-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.language a,
+#langOpt a {
+  color: white;
+  text-decoration: none;
+}
+
+#langOpt {
+  background-color: var(--header);
+  width: 100px;
+  height: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10;
+}
+#langOpt .lang-opt {
+  padding: 5px 0;
+}
+
+#langOpt.show-box {
+  display: flex;
+}
+
 .navbarv .navbarv-logo {
   font-size: 2rem;
   font-weight: 700;
@@ -519,6 +559,10 @@ footer {
     font-size: 3rem;
   }
 
+  section.preview {
+    margin-top: 10px;
+  }
+
   .navbarv {
     padding: 3rem;
   }
@@ -542,7 +586,18 @@ footer {
     width: 15rem;
     height: 100vh;
     transition: 0.3s;
+    flex-direction: column;
     box-shadow: 0px 0px 20px white;
+  }
+
+  #langOpt {
+    width: 100px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+  }
+  #langOpt .lang-opt {
+    padding: 5px 0;
   }
 
   .navbarv .navbarv-extra {
