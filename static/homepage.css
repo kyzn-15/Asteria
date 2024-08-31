@@ -187,6 +187,10 @@ img.about-logo {
   background-color: var(--dark-yellow);
 }
 
+.description p{
+  text-align: justify;
+}
+
 /* Reverse */
 .reverse-wrap {
   width: 100vw;
@@ -220,7 +224,7 @@ img.about-logo {
   width: var(--size);
   height: calc(var(--size) / 1.6);
   margin-top: 2rem;
-  background-image: url(../static/assets/Asteria_Banner.png);
+  background-image: url(../static/assets/fotbar.jpg);
   background-size: cover;
   background-position: center;
   border: 0.2rem solid white;
@@ -250,7 +254,28 @@ img.about-logo {
 #information .event-credit,
 #information .location,
 #information .contact-person {
-  margin: 0 150px;
+  margin: 0 100px;
+}
+
+#information .event-credit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0px 0px 20px white;
+}
+
+#information .img-footer{
+  --size: 20rem;
+  width: var(--size);
+  height: var(--size);
+  background-position: center;
+  background-size: cover;
+  background-image: url(../static/assets/favicon_logo.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 20px white);
 }
 
 #information .location {
@@ -322,7 +347,8 @@ img.about-logo {
   border-radius: 10px;
   padding: 20px;
   font-weight: 600;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px white;
+  color: var(--background-color);
   display: none;
 }
 
@@ -341,6 +367,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  text-shadow: 0px 0px 20px white;
 }
 
 /* Mobile Vers */
@@ -356,6 +383,18 @@ footer {
 
   #about .waves-3 {
     margin-bottom: -60px;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+  }
+
+  #about div.container.reverse{
+    flex-direction: column-reverse;
+  }
+
+  .description p {
+    width: 75vw;
   }
 
   #information {
@@ -379,10 +418,11 @@ footer {
 
   #information .contact-person i {
     font-size: 12px;
+    margin: 0px 0.5rem;
   }
 
   #information .contact-person a {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 
@@ -496,5 +536,13 @@ footer {
   #information .contact-person a {
     font-size: 1rem;
     flex-direction: column;
+  }
+
+  footer{
+    font-size: 0.8rem;
+  }
+
+  .description p {
+    width: 80vw;
   }
 }

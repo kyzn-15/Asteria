@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     strings: [
       "ASTERIA ada api unggun lohhh!!",
       "Kapan lagi nih nginap di sekolah sama teman teman seangkatann? ",
-      "Duh aku pengen banget nontonin performance dari Jason, Yusuf, Padus dan lain lainnya..!",
+      "Duh aku pengen banget nontonin performance dari Jason, Yusuf, Padus dan lain lainnya..di event Asteria!",
+      "Jangan lupa buang sampah pada tempatnya ya teman-teman !",
     ],
     typeSpeed: 50,
     loop: true,
