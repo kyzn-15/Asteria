@@ -8,6 +8,7 @@
   --yellow: rgb(255, 230, 132);
   --dark-yellow: rgb(223, 199, 91);
   --dark-blue: rgb(33, 50, 73);
+  --purple: rgb(92, 63, 116);
 }
 
 /* Google font */
@@ -18,6 +19,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+html{
+  background-color: var(--background-color);
 }
 
 .hidden {
@@ -40,6 +45,46 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: var(--background-color);
+}
+
+.intro#splash {
+  position: fixed;
+  z-index: 99999999;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-header#splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo#splash {
+  display: inline-block;
+  opacity: 0;
+  --size: 550pt;
+  max-height: var(--size);
+  max-width: var(--size);
+  transform: scale(0.8);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  filter: drop-shadow(0px 0px 20px white);
+}
+
+.logo#splash.active {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.logo#splash.fade {
+  opacity: 0;
 }
 
 .bg-darkblue {
@@ -440,55 +485,19 @@ div.list {
   align-items: center;
 }
 
-.gallery-grid .landscape {
-  width: 250px;
-  height: 150px;
-}
-
-.gallery-grid .portrait {
-  width: 150px;
-  height: 250px;
-}
-
-
-/* .gallery-item iframe { */
-  /* width: 100%;
-  height: auto;
-  display: block;
-  border: 5px solid white;
-  border-radius: 5px;
-  box-shadow: 0 0 20px white;
-  padding: 0;
-  margin-bottom: 20px; */
-/* } */
-
-/* #gallery svg {
-  margin-bottom: -100px;
-}
-
-iframe {
-  border: 0.5rem solid white;
-} */
-
-.landscape iframe{
-  border: 0.2rem solid white;
-  margin: 0.5rem 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 20px white;
-}
-
 .portrait iframe{
+  margin: 0.5rem;
   border: 0.2rem solid white;
-  margin: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 20px white;
 }
 
-.potrait{
-  display: flex;
-  justify-content: center;
+.landscape iframe {
+  margin: 0.5rem;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px white;
 }
-
 
 /* Form */
 .waves-3 {
@@ -807,6 +816,12 @@ footer {
     font-size: 75.5%;
   }
 
+  .logo#splash {
+    --size: 400pt;
+    width: var(--size);
+    height: var(--size);
+  }
+
   section.banner {
     margin-top: 60px;
   }
@@ -830,7 +845,7 @@ footer {
   }
 
   .waves-3 {
-    margin-bottom: -60px;
+    margin-bottom: -20px;
   }
 
   #information {
@@ -878,8 +893,15 @@ footer {
     font-size: 3rem;
   }
 
+  .logo#splash {
+    --size: 50rem;
+    width: var((--size));
+    height: var((--size));
+  }
+
   .navbarv {
     padding: 3rem;
+    margin-bottom: 20rem;
   }
 
   .logo-wrap a.navbarv-logo {
@@ -968,6 +990,11 @@ footer {
 }
 
 @media (max-width: 590px) {
+  .logo#splash {
+    --size: 15rem;
+    width: var((--size));
+    height: var((--size));
+  }
   #information .contact-person a {
     font-size: 1rem;
     flex-direction: column;
@@ -1007,5 +1034,6 @@ footer {
 
   .landscape iframe {
     width: 80vw;
+    height: 21vh;
   }
 }
